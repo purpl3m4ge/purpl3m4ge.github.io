@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bewerbung von Kayra Kurc</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Alles standardmäßig verstecken, bis Passwort stimmt */
+    body {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<canvas id="bgCanvas"></canvas>
+<span class="b1"></span>
+<span class="b2"></span>
+<span class="b3"></span>
+
+<header class="site-header">
+  <div class="container">
+    <h1>Bewerbung von Kayra Kurc</h1>
+    <p class="lead">Auf Dokument klicken, um es anzusehen oder herunterzuladen.</p>
+  </div>
+</header>
+
+<main class="container">
+  <section class="cards">
+    <article class="card">
+      <div class="accent-line" aria-hidden="true"></div>
+      <h2>Lebenslauf</h2>
+      <p>Mein Lebenslauf</p>
+      <p class="actions">
+        <a class="btn" href="pdfs/Lebenslauf.pdf" download target="_blank">Lebenslauf</a>
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="accent-line" aria-hidden="true"></div>
+      <h2>Motivationsschreiben</h2>
+      <p>Mein Motivationsschreiben</p>
+      <p class="actions">
+        <a class="btn" href="pdfs/Motivationsschreiben_IT.pdf" download target="_blank">Motivationsschreiben</a>
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="accent-line" aria-hidden="true"></div>
+      <h2>Zeugnisse & Zertifikate</h2>
+      <p>Wichtige Nachweise.</p>
+      <p class="actions">
+        <a class="btn" href="pdfs/Zeugnis_SEK3_Kurc_Kayra.pdf" target="_blank">Zeugnis SEK 3</a>
+        <p></p>
+        <a class="btn" href="pdfs/Arbeitszeugnis_Ziegler_Brot_AG_Kurc_Kayra.pdf" target="_blank">Arbeitszeugnis</a>
+        <p></p>
+        <a class="btn" href="pdfs/Stellwerktest_Informatiker_EFZ_Kurc_Kayra.pdf" target="_blank">Stellwerk Test</a>
+        <p></p>
+        <a class="btn" href="pdfs/Zeugnis_1_Semester_Ziegler_Brot_AG_Kurc_Kayra.pdf" target="_blank">Zeugnis BBZBL</a>
+      </p>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Kayra Kurc — <a href="mailto:kurckayra@gmail.com">kurckayra@gmail.com</a></p>
+  </div>
+</footer>
+
+<script src="effect.js"></script>
+
+<script>
+  // Passwortschutz
+  const passwort = "Passwort"; // <-- hier dein Passwort ändern
+  let versuch = prompt("Bitte Passwort eingeben:");
+
+  if (versuch === passwort) {
+    document.body.style.display = "block"; // Seite anzeigen
+  } else {
+    document.body.innerHTML = "<h1>Zugriff verweigert</h1>";
+  }
+</script>
+</body>
+</html>
+
